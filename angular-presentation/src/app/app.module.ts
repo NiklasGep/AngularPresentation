@@ -4,11 +4,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StartPageComponent } from './start-page/start-page.component';
+import { GliederungComponent } from './gliederung/gliederung.component';
+import { EinfuehrungComponent } from './einfuehrung/einfuehrung.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    StartPageComponent
+    StartPageComponent,
+    GliederungComponent,
+    EinfuehrungComponent
   ],
   imports: [
     BrowserModule,

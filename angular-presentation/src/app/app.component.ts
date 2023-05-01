@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  currentNav: String ;
+  constructor(private router: Router){
+    this.currentNav = 'startpage';
+    this.router.navigateByUrl('startpage');
+  }
   title = 'angular-presentation';
+
+  navOnClick(navName: string){
+    this.currentNav = navName;
+    this.router.navigateByUrl(navName);
+  }
 }

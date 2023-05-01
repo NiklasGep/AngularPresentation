@@ -1,6 +1,16 @@
 <div class="headElement">
+    <img class="headPic" src="assets/img/angular.svg" alt="Angular Logo">
     <h1>Angular Präsentation</h1>
 </div>
+<div class="navilist">
+    <p (click)="navOnClick('startpage')" [class.active]="currentNav === 'startpage'">Startseite</p>
+    <p (click)="navOnClick('gliederung')" [class.active]="currentNav === 'gliederung'">Gliederung</p>
+    <p (click)="navOnClick('einfuehrung')" [class.active]="currentNav === 'einfuehrung'">Einführung</p>
+    <p (click)="navOnClick('komponenten')" [class.active]="currentNav === 'komponenten'">Komponenten</p>
+    <p (click)="navOnClick('templates')" [class.active]="currentNav === 'templates'">Templates/Direktiven</p>
+    <p (click)="navOnClick('routing')" [class.active]="currentNav === 'routing'">Routing</p>
+  </div>
+  
 <router-outlet></router-outlet>
 <div class="footer">
     <p>von: Niklas Geppert, Kurs: TInf21B4</p>
