@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { map, Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -7,15 +8,16 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  currentNav: String ;
-  constructor(private router: Router){
-    this.currentNav = 'startpage';
-    this.router.navigateByUrl('startpage');
+  currentNav: Observable<string> ;
+  constructor(private router: Router, private route: ActivatedRoute){
+    this.router.navigateByUrl('startseite');
+    this.currentNav= this.route.params.pipe(
+      map(params => params['slug'])
+    );
   }
   title = 'angular-presentation';
 
   navOnClick(navName: string){
-    this.currentNav = navName;
     this.router.navigateByUrl(navName);
   }
 }

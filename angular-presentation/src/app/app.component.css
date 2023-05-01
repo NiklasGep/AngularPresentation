@@ -1,9 +1,8 @@
-.footer{
+.bottom-fixed {
     position: fixed;
     bottom: 0;
-    width: 100%;
-    color: white;
-}
+  }
+  
 .navilist {
     display: flex;
     justify-content: space-around;
