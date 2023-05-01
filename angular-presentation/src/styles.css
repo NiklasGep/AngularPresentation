@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+html{
+    background-color: #303030;
+    color: white;
+    position: relative;
+  }
+  
+html::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 1200px 1200px;
+    border-color: transparent transparent #1567c2 transparent;
+    transform: rotate(-90deg);
+    z-index: -1;
+  }
+  

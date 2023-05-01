@@ -1,0 +1,21 @@
+.AngularLogo{
+    width: 30%;
+}
+.InfoText{
+    float: left;
+  margin-top: 20px;
+  margin-right: 50px;
+  margin-left: 30px;
+  text-align: left;
+}
+.console-text {
+    font-family: Roboto Mono,monospace;
+    background-color: #2d2d2d;
+    color: #17ff0b;
+    line-height: 1.5;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    position: relative;
+}
+  

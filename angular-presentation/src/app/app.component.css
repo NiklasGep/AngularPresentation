@@ -1,0 +1,45 @@
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: white;
+}
+.navilist {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    color: #fff;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navilist p {
+    padding: 10px;
+  }
+  
+  .navilist p:hover {
+    background-color: #555;
+  }
+  
+  .navilist p.active {
+    background-color: #176ec9;
+    color: #ffffff;
+  }
+  .headElement {
+    display: flex;
+    align-items: center;
+    padding-left: 38%;
+  }
+  
+  .headPic {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px; /* Füge hier den gewünschten Abstand zwischen Logo und Überschrift ein */
+
+  }
+  
+  
+  
+  
+  
