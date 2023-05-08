@@ -1,8 +1,3 @@
-.bottom-fixed {
-    position: fixed;
-    bottom: 0;
-  }
-  
 .navilist {
     display: flex;
     justify-content: space-around;
@@ -37,6 +32,30 @@
     margin-right: 10px; /* Füge hier den gewünschten Abstand zwischen Logo und Überschrift ein */
 
   }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0px; /* Höhe des Fußbereichs anpassen */
+  }
+  
+  .footer p {
+    display: inline-block;
+    margin: 10px 20px 10px 0;
+    padding-left: 30px;
+  }
+  
+  .footer a.rechtsfooter {
+    display: inline-block;
+    margin: 10px 0;
+    float: right;
+    padding-right: 30px;
+    color: white;
+    text-decoration: underline;
+  }
+
   
   
   

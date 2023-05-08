@@ -7,12 +7,13 @@
     <p routerLink="/gliederung" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Gliederung</p>
     <p routerLink="/einfuehrung" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Einführung</p>
     <p routerLink="/komponenten" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Komponenten</p>
-    <p routerLink="/templates" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Templates/Direktiven</p>
-    <p routerLink="/routing" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Routing</p>
+    <p routerLink="/templates" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Templates/Observables</p>
+    <p routerLink="/routing/555" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Routing</p>
   </div>
   
   
 <router-outlet></router-outlet>
 <div class="footer">
     <p>von: Niklas Geppert, Kurs: TInf21B4</p>
+    <a class="rechtsfooter" (click)="navOnClick('sources')">Quellen</a>
 </div>

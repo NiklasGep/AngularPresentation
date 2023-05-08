@@ -1,1 +1,34 @@
-<p>komponente works!</p>
+<h1>Komponenten</h1>
+<div class="box">
+    <h2>Was versteht man unter einer Komponente</h2>
+        <img class="KomponentenPic" src="assets\img\komponente.PNG"alt="Komponenten-Aufbau">
+        <p>Eine Angular-Komponente ist eine eigenständige Einheit innerhalb einer Angular-Anwendung, die eine bestimmte Funktionalität bereitstellt und eine klare Trennung von Verantwortlichkeiten ermöglicht. Eine Komponente besteht aus einer Klasse, die die Logik der Komponente enthält, sowie aus einer Vorlage, die das Aussehen der Komponente definiert. Die Vorlage enthält HTML-Code, der durch Angular-Direktiven erweitert werden kann, um dynamische Daten anzuzeigen oder Benutzereingaben zu verarbeiten.</p>
+        <p>Komponenten können über Eingabe- und Ausgabeparameter (Bindings) miteinander interagieren, um Daten zwischen verschiedenen Komponenten auszutauschen. Dadurch können Entwickler komplexe Anwendungen aus mehreren Komponenten aufbauen und diese miteinander kombinieren(Services). 
+        <p>Komponenten sind eine grundlegende Einheit in der komponentenbasierten Architektur von Angular und werden häufig verwendet, um spezifische Funktionalitäten wie z.B. Navigation, Authentifizierung oder Datenanzeige zu implementieren. Sie können auch wiederverwendet werden, um ähnliche Funktionalitäten in verschiedenen Teilen der Anwendung bereitzustellen.</p>
+</div>
+<div class="box">
+    <h2>Erstellen einer Komponente</h2>
+    <p>Eine Komponente erstellt man durch das eintippen folgendes Befehls in der Konsole:</p>
+    <p class="console-text">ng generate component my-component</p>
+    <p>Durch diesen Befehl wird dann eine neue Komponente in dem 'src/app'-Ordner erstellt und hinzugefügt. Außerdem wird die Komponente automatisch in der App-Module importiert und kann somit im ganzen Projekt durch einen simplen Import verwendet werden</p>
+    <details>
+        <summary class="summaryDeco">Verwendung von Komponenten</summary>
+        <p>Komponenten lassen sich ganz leicht durch HTML-taggs verwenden. In der TypeScript einer Komponente finde ich unter "selector" den tag, welchen ich in der HTML zum aufrufen benutzten kann.</p>
+        <img class="KomponentenPic2" src="assets\img\selector.png"alt="selector">
+    </details>
+</div>
+<div class="box">
+    <h2>Services</h2>
+    <p>In Angular ist ein Service eine Klasse, die eine spezifische Funktionalität bereitstellt und von Komponenten und anderen Services verwendet werden kann. Ein Service kann Daten von einer API abrufen, komplexe Geschäftslogik durchführen oder Daten lokal im Speicher speichern.</p>
+    <p>Services sind in Angular ein wichtiger Bestandteil der komponentenbasierten Architektur, da sie die Aufgaben von der Darstellung von Daten trennen und somit die Wiederverwendbarkeit und Wartbarkeit von Code verbessern. Eine Service-Klasse wird normalerweise als Singleton-Instanz bereitgestellt, was bedeutet, dass es immer nur eine einzige Instanz des Dienstes gibt, die von allen Komponenten verwendet wird.</p>
+    <p>Insgesamt bieten Services in Angular eine effektive Möglichkeit, Funktionalitäten zu organisieren und zu teilen, die von mehreren Komponenten oder anderen Teilen der Anwendung genutzt werden.</p>
+    <details>
+        <summary class="summaryDeco">Service nutzen Beispiel</summary>
+        <p>Nummer: {{knumber}}</p>
+        <button class="blue-button" (click)="BtnClick()">Füge 5 hinzu</button>
+        <div class="imgclass">
+        <img class="KomponentenPic3" src="assets\img\KnumberTS.PNG"alt="KnumberTS">
+        <img class="KomponentenPic3" src="assets\img\Service.PNG"alt="Service">
+        </div>
+    </details>
+</div>

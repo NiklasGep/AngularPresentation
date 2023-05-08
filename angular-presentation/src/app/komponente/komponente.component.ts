@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TestServiceService } from '../services/test-service.service';
 
 @Component({
   selector: 'app-komponente',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./komponente.component.css']
 })
 export class KomponenteComponent implements OnInit {
+  knumber;
 
-  constructor() { }
+  constructor(private testService: TestServiceService) { 
+    this.knumber = 10;
+  }
 
   ngOnInit(): void {
   }
 
+  BtnClick(){
+    this.knumber = this.testService.testFunction(this.knumber);
+  }
 }

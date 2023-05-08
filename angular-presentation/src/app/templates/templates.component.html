@@ -1,0 +1,29 @@
+<h1>Templates und Observables</h1>
+<div class="box">
+    <h2>Verwendung von Templates</h2>
+    <p>In Angular werden Templates verwendet, um die visuelle Darstellung von Komponenten zu definieren. Ein Template besteht aus HTML-Code und kann durch Angular-Direktiven erweitert werden, um dynamische Daten anzuzeigen oder Benutzereingaben zu verarbeiten.</p>
+    <p>Templates sind in Angular eine wichtige Komponente der komponentenbasierten Architektur, da sie die Trennung von Verantwortlichkeiten zwischen der Logik der Komponente und deren Darstellung ermöglichen. Die Logik der Komponente wird in der Komponentenklasse definiert, während das Template die visuelle Darstellung der Komponente definiert.</p>
+    <p>Templates in Angular unterstützen auch die Verwendung von Structural-Direktiven und Attribut-Direktiven. Structural-Direktiven wie *ngIf und *ngFor ermöglichen die bedingte Anzeige von HTML-Elementen und die wiederholte Anzeige von Elementen in einer Schleife. Attribut-Direktiven wie [ngClass] und [ngStyle] ermöglichen die Verarbeitung von Benutzereingaben und die dynamische Anpassung des Aussehens von HTML-Elementen.</p>
+    <details>
+        <summary class="summaryDeco">Beispiel *ngFor</summary>
+        <ul>
+            <li *ngFor="let item of itemList">{{ item }}</li>
+        </ul>
+        <img class="imgBox" src="assets/img/ngFor.PNG">          
+    </details>
+</div>
+<div class="box">
+    <h2>Observables</h2>
+    <p>In Angular werden Observables verwendet, um asynchrone Datenströme zu verarbeiten. Ein Observable ist ein Objekt, das kontinuierlich Daten emittiert, die von Komponenten oder Diensten abgerufen werden können. Ein Observable kann mehrere Datenpunkte in einer sequenziellen Reihenfolge oder auch nur einen einzigen Datenpunkt emittieren.</p>
+    <p>In Angular können Observables mit verschiedenen Operatoren wie map(), filter(), merge() und switchMap() kombiniert werden, um komplexe asynchrone Operationen durchzuführen. Sie können auch mit Angulars HTTP-Client verwendet werden, um asynchrone HTTP-Anforderungen an einen Server zu senden und die Antwortdaten zu verarbeiten.</p>
+    <p>Insgesamt sind Observables in Angular ein wichtiger Bestandteil, um asynchrone Datenströme zu verarbeiten und die Performance der Anwendung zu verbessern.</p>
+    <details>
+        <summary class="summaryDeco">Beispiel Observables</summary>
+        <p>Current value: {{ value$ | async }}</p>
+        <button class="blue-button" (click)="updateValue()">Update Value</button>
+        <div class="imgclass">
+            <img class="imgBox2" src="assets/img/ObservablesTS.PNG">
+        <img class="imgBox2" src="assets/img/ObservablesHTML.PNG">
+        </div>
+    </details>
+</div>
