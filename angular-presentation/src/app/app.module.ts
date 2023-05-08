@@ -6,13 +6,23 @@ import { AppComponent } from './app.component';
 import { StartPageComponent } from './start-page/start-page.component';
 import { GliederungComponent } from './gliederung/gliederung.component';
 import { EinfuehrungComponent } from './einfuehrung/einfuehrung.component';
+import { KomponenteComponent } from './komponente/komponente.component';
+import { SourcesComponent } from './sources/sources.component';
+import { TemplatesComponent } from './templates/templates.component';
+import { RoutingComponent } from './routing/routing.component';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StartPageComponent,
     GliederungComponent,
-    EinfuehrungComponent
+    EinfuehrungComponent,
+    KomponenteComponent,
+    SourcesComponent,
+    TemplatesComponent,
+    RoutingComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,

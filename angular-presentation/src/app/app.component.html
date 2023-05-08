@@ -3,15 +3,17 @@
     <h1>Angular Präsentation</h1>
 </div>
 <div class="navilist">
-    <p (click)="navOnClick('startpage')" [class.active]="currentNav === 'startpage'">Startseite</p>
-    <p (click)="navOnClick('gliederung')" [class.active]="currentNav === 'gliederung'">Gliederung</p>
-    <p (click)="navOnClick('einfuehrung')" [class.active]="currentNav === 'einfuehrung'">Einführung</p>
-    <p (click)="navOnClick('komponenten')" [class.active]="currentNav === 'komponenten'">Komponenten</p>
-    <p (click)="navOnClick('templates')" [class.active]="currentNav === 'templates'">Templates/Direktiven</p>
-    <p (click)="navOnClick('routing')" [class.active]="currentNav === 'routing'">Routing</p>
+    <p routerLink="/startseite" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Startseite</p>
+    <p routerLink="/gliederung" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Gliederung</p>
+    <p routerLink="/einfuehrung" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Einführung</p>
+    <p routerLink="/komponenten" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Komponenten</p>
+    <p routerLink="/templates" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Templates/Observables</p>
+    <p routerLink="/routing/555" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Routing</p>
   </div>
+  
   
 <router-outlet></router-outlet>
 <div class="footer">
     <p>von: Niklas Geppert, Kurs: TInf21B4</p>
+    <a class="rechtsfooter" (click)="navOnClick('sources')">Quellen</a>
 </div>

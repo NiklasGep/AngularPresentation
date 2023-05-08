@@ -1,0 +1,32 @@
+<h1>Angular Routing</h1>
+<div class="box">
+    <h2>Routing in Angular</h2>
+    <p>Routing ist in Angular ein wichtiger Bestandteil, um Single-Page-Anwendungen zu erstellen und die Navigation zwischen verschiedenen Ansichten innerhalb der Anwendung zu ermöglichen. Das Routing-Modul in Angular ermöglicht es, URLs zu definieren, die auf bestimmte Komponenten oder Ansichten innerhalb der Anwendung verweisen.</p>
+    <p>Im Routing-Modul können Entwickler verschiedene Routen definieren, die auf bestimmte Komponenten verweisen. Jede Route besteht aus einem Pfad und einem Komponenten-Link. Wenn ein Benutzer eine URL eingibt oder auf einen Link in der Anwendung klickt, überprüft Angular die definierten Routen und navigiert dann zur entsprechenden Ansicht.</p>
+    <p>Routing in Angular kann auch zur Implementierung von Lazy Loading verwendet werden, um die Ladezeit der Anwendung zu optimieren. Hierbei werden Module und Komponenten nur dann geladen, wenn sie benötigt werden.</p>
+    <details>
+        <summary class="summaryDeco">Beispiel Routes Benutzen</summary>
+        <img class="imgBox" src="assets/img/RouterList.PNG">
+    </details>
+</div>
+<div class="box">
+    <h2>Erstellen von Routen</h2>
+    <p>Damit Angular Routing wie im Beispiel darüber funktioniert, muss ich in dem "app.routing.module.ts" die Routen erstmal erstellen und festlegen, was passiert, wenn ich über eine Route navigiere.</p>
+    <img class="imgBox" src="assets/img/Routes.PNG">
+</div>
+<div class="box">
+    <h2>Parameter an Routen übergeben</h2>
+    <p>In Angular können Parameter an Routen übergeben werden, um dynamische Inhalte zu generieren oder bestimmte Daten aus der Anwendung abzurufen. Es gibt zwei Arten von Parametern, die an Routen übergeben werden können: Pfadparameter und Abfrageparameter.</p>
+    <p>1. Pfadparameter: Pfadparameter werden in der URL als Teil des Pfads definiert und werden durch einen Doppelpunkt vor dem Parameter gekennzeichnet. Zum Beispiel kann eine Route wie "/product/:id" definiert werden, wobei ":id" ein Pfadparameter ist, der die ID des Produkts enthält. In der Komponente, die dieser Route zugeordnet ist, können Sie dann auf den Wert des Parameters zugreifen, indem Sie den ActivatedRoute-Service verwenden.</p>
+    <p>2. Abfrageparameter: Abfrageparameter werden in der URL als Teil der Abfragezeichenfolge definiert und werden durch ein Fragezeichen gefolgt von dem Namen und dem Wert des Parameters gekennzeichnet. Zum Beispiel kann eine Route wie "/products?category=electronics" definiert werden, wobei "category" ein Abfrageparameter ist, der die Kategorie der Produkte enthält. In der Komponente, die dieser Route zugeordnet ist, können Sie dann auf den Wert des Parameters zugreifen, indem Sie den ActivatedRoute-Service verwenden und den Parameter aus der Abfragezeichenfolge extrahieren.</p>
+    <p>Route-ID:{{id}}</p>
+</div>
+<div class="box">
+    <h2>Routing-Error-Handling</h2>
+    <p>In Angular gibt es verschiedene Möglichkeiten, um Fehler beim Routing zu behandeln. Einige der gängigen Ansätze sind:</p>
+    <p>1. Standard-Fehlerseite: Eine Möglichkeit ist, eine Standard-Fehlerseite zu definieren, die angezeigt wird, wenn eine Route nicht gefunden wird oder ein Fehler auftritt. Diese Seite kann beispielsweise eine Fehlermeldung und eine Schaltfläche enthalten, mit der der Benutzer zur Startseite zurückkehren kann.</p>
+    <p>2. Redirects: Eine weitere Möglichkeit ist, Redirects zu definieren, die den Benutzer auf eine alternative Seite weiterleiten, wenn eine bestimmte Route nicht gefunden wird. So kann beispielsweise eine falsch geschriebene URL automatisch auf die korrekte URL weitergeleitet werden.</p>
+    <p>3. Guards: Guards sind Funktionen, die es ermöglichen, den Zugriff auf eine Route zu kontrollieren, bevor die Navigation durchgeführt wird. Sie können beispielsweise verwendet werden, um sicherzustellen, dass ein Benutzer angemeldet ist, bevor er auf eine geschützte Seite zugreift.</p>
+    <p>4. Error Handling im Code: Fehler beim Routing können auch im Code behandelt werden, indem ein Fehler-Handler definiert wird. Hierbei wird eine Funktion definiert, die aufgerufen wird, wenn ein Fehler auftritt. Diese Funktion kann beispielsweise eine Fehlermeldung anzeigen oder den Benutzer auf eine alternative Seite weiterleiten.</p>
+    <button class="blue-button" (click)="BtnClick()">Error-Routing</button>
+</div>

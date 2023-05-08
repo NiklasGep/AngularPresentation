@@ -1,11 +1,4 @@
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: calc(3 * 33.33% - 20px); /* 20px für den Abstand zwischen den Kästen */
-    margin: 0 auto;
-  }
-  
-  .box {
+.box {
     flex: 1 1 33.33%;
     box-sizing: border-box;
     background-color: #2d2d2d;
@@ -15,11 +8,13 @@
     border: 1px solid white;
     box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.3);
   }
-  
-  .box h3 {
-    margin-top: 0;
-    text-decoration: underline;
+  .summaryDeco{
+    font-size: 20px;
   }
+  .imgBox{
+    border: 1px solid white;
+  }
+
   .blue-button {
     display: inline-block;
     padding: 12px 24px;
@@ -46,18 +41,3 @@
     transform: translateY(0);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
-
-  .console-text {
-    display: inline-block;
-    font-family: Roboto Mono,monospace;
-    background-color: #1f1f1f;
-    color: #17ff0b;
-    line-height: 1.5;
-    padding: 10px;
-    border-radius: 5px;
-    margin: 10px 0;
-    position: relative;
-}
-
-  
-  
